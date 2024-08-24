@@ -1,32 +1,34 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Red Velvet Games 🍰*
 
-Submitted by: **Your Name Here**
+Submitted by: **Juliette Park**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Red Velvet Games 🍰** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [✅] The introduction section explains the background of the company and how many games remain unfunded.
+* [✅] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [✅] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [✅] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [✅] Added a NavBar (using Flexbox learnings!) to jump to the "Games" section
+* [✅] Added CSS styling with color, positioning, borders, and Google fonts to add a personalized touch! 
+* [✅] Created animated buttons that transition and invert color when hovered over (with pseudoclasses).
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/w6wxBru' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with [LICEcap](https://www.cockos.com/licecap/)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -34,11 +36,17 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Some challenges:
+* I needed a refresher on DOM API and it took extra googling to figure out what to append and which elements to nest.
+* I wanted to make the website as responsive as possible so styling took extra time.
+* Brain switching over to JavaScript after using Python for so long (kept forgetting "let")!
+* Remembering CSS styling commands and sometimes figuring out bugs when nothing was changing on screen!
+
+However, I learned a lot and was surprised at how much fun I had. Thank you CodePath <3
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Juliette Park
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
