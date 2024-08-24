@@ -28,7 +28,7 @@ Here's a walkthrough of implemented features:
 <img src='https://imgur.com/a/w6wxBru' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 [Walkthrough Link](https://imgur.com/a/w6wxBru)
-![](https://github.com/juliettepark/web102_prework/blob/main/web102_prework_demo.gif)
+![](https://github.com/juliettepark/web102_prework/blob/main/web102_prework_demo2.gif)
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [LICEcap](https://www.cockos.com/licecap/)
 <!-- Recommended tools:
