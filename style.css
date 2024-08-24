@@ -21,6 +21,13 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -42,6 +49,7 @@ body {
     justify-content: space-around;
 }
 
+
 .game-img {
     width: 100%;
     border-radius: 5px;
@@ -55,6 +63,22 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+}
+
+.game-image {
+    /* Define width and height to use object-fit property */
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+
+.game-card > ul {
+    list-style-type: none;
+    
+}
+
+.game-card > ul > li {
+    text-align: left;
 }
 
 .game-card:hover {
