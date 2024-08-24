@@ -148,14 +148,13 @@ function showAllGames() {
 
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
-unfundedBtn.addEventListener('click', filterUnfundedOnly)
 const fundedBtn = document.getElementById("funded-btn");
-fundedBtn.addEventListener('click', filterFundedOnly)
 const allBtn = document.getElementById("all-btn");
-allBtn.addEventListener('click', showAllGames)
 
 // add event listeners with the correct functions to each button
-
+unfundedBtn.addEventListener('click', filterUnfundedOnly)
+fundedBtn.addEventListener('click', filterFundedOnly)
+allBtn.addEventListener('click', showAllGames)
 
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
@@ -166,13 +165,19 @@ allBtn.addEventListener('click', showAllGames)
 const descriptionContainer = document.getElementById("description-container");
 
 // use filter or reduce to count the number of unfunded games
-
+const num_unfunded = GAMES_JSON.reduce((count, game) => {
+    return game.pledged < game.goal ? count += 1 : count
+} ,0)
+console.log(num_unfunded)
 
 // create a string that explains the number of unfunded games using the ternary operator
-
+const unfundedDisplay = `Hooray! A total of ${raisedComma} has been raised for ${GAMES_JSON.length - num_unfunded} ${GAMES_JSON.length - num_unfunded > 1 ? "games" : "game"}.
+However, ${num_unfunded} ${num_unfunded > 1 ? "games" : "game"} remain unfunded. We need your help to bring these games to life!`
 
 // create a new DOM element containing the template string and append it to the description container
-
+let cta = document.createElement('p')
+cta.innerHTML = unfundedDisplay
+descriptionContainer.appendChild(cta)
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
@@ -186,7 +191,16 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [first, second, ...others] = sortedGames
+// console.log(first)
+// console.log(second)
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+let firstTitle = document.createElement('h3')
+let secondTitle = document.createElement('h3')
+firstTitle.innerHTML = first.name
+secondTitle.innerHTML = second.name
+firstGameContainer.appendChild(firstTitle)
+secondGameContainer.appendChild(secondTitle)
 
 // do the same for the runner up item

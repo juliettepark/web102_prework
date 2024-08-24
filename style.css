@@ -1,42 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: 'Gluten';
+    /* background-color: #758190; */
+    background-color: #fdf6e3;
+    padding: 3%;
+}
+
+p {
+    font-size: larger;
 }
 
 #tentacles {
-    width: 50px;
+    width: 7%;
+    height: 7%;
+    margin-right: 1%;
 }
 
 .header {
     display: flex;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background-color: #fdf6e3;
     padding: 1%;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -3%;
     margin-right: -10px;
-    margin-top: -10px;
+    margin-top: -3%;
+    justify-content: space-between;
+    color: #9A031E;
+    color: black;
+    font-size: x-large;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.logo {
+    display: flex;
+}
+
+.introduction {
+    background-color: #9A031E;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    border-radius: 20px;
+    padding: 3%;
+    padding-top: 2%;
+    color: #fdf6e3;
+}
+
+.introduction > h2 {
+    font-size: 3em;
+}
+
+.section-header {
+    font-size: 3em;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.descrp {
+    text-align: center;
 }
 
 .stats-container {
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 .stats-container:hover {
     cursor: pointer;
-    
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #b8b39d;
+    transition: 0.3s;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    /* background-color: #a8b0bc; */
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     width: 100%;
     text-align: center;
+    border: solid 2px black;
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -47,6 +93,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 3%;
 }
 
 
@@ -58,11 +105,14 @@ body {
 
 .game-card {
     background-color: #FFFFFF;
+    background-color:#f8f4e9;
     padding: 1%;
     margin: 1%;
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    border: solid 2px black;
+    transition: 0.3s;
 }
 
 .game-image {
@@ -74,7 +124,6 @@ body {
 
 .game-card > ul {
     list-style-type: none;
-    
 }
 
 .game-card > ul > li {
@@ -83,17 +132,37 @@ body {
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #b8b39d;
+    transition: 0.3s;
 }
 
 #button-container {
     text-align: center;
 }
 
+.button {
+    background-color: #9A031E;
+    padding: 1% 1.5%;
+    border-radius: 20px;
+    font-size: x-large;
+    text-decoration: none;
+    transition: 0.3s;
+    color:  #fdf6e3;
+    border: solid 2px black;
+}
+
+.button:hover {
+    background-color: #fdf6e3;
+    color: #9A031E;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 button {
-    font-family: 'Cabin';
+    /* font-family: 'Cabin'; */
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    font-family: 'Gluten';
 }
